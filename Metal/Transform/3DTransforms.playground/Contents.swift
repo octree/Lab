@@ -53,7 +53,6 @@ renderEncoder.setVertexBytes(&matrix,
                              index: 1)
 renderEncoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: vertices.count)
 
-
 renderEncoder.endEncoding()
 commandBuffer.present(drawable)
 commandBuffer.commit()
