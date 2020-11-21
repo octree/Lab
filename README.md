@@ -6,18 +6,6 @@
 
 
 
-## TextKit
-
-
-
-## Collaboration
-
-
-
-## Encryption
-
-
-
 ## Algebra
 
 
@@ -34,3 +22,12 @@
 
 ### Spotlight
 
+## TextKit
+
+
+
+## Collaboration
+
+
+
+## Encryption
