@@ -492,6 +492,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Lighting-macOS/Lighting.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4L3527X2E5;
 				INFOPLIST_FILE = "Lighting-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -510,6 +511,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Lighting-macOS/Lighting.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4L3527X2E5;
 				INFOPLIST_FILE = "Lighting-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,13 +528,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NPW72GS68;
 				INFOPLIST_FILE = "Lighting-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.Lighting-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.octree.Lighting-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -545,13 +548,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NPW72GS68;
 				INFOPLIST_FILE = "Lighting-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.Lighting-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.octree.Lighting-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
