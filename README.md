@@ -32,5 +32,5 @@
 
 ### Point Light
 
-## Spotlight
+### Spotlight
 
