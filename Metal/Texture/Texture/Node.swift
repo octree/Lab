@@ -13,4 +13,3 @@ class Node {
         return translateMatrix * rotateMatrix * scaleMatrix
     }
 }
-
