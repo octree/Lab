@@ -4,6 +4,8 @@
 
 ![Lighting Fundamentals](./Images/Metal-Lighting-Fundamentals.png)
 
+![Texture](./Images/Textures.png)
+
 
 
 ## Algebra
