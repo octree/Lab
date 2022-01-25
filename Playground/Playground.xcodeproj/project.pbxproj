@@ -17,6 +17,9 @@
 		C2C712DA279FD280008CF44A /* ForceDirect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C712D4279FD27F008CF44A /* ForceDirect.swift */; };
 		C2C712DB279FD280008CF44A /* CGGraphics+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C712D5279FD280008CF44A /* CGGraphics+Extension.swift */; };
 		C2C712DC279FD280008CF44A /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C712D6279FD280008CF44A /* GraphView.swift */; };
+		C2C712E2279FD30E008CF44A /* DiffPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C712DE279FD2E5008CF44A /* DiffPlayground.swift */; };
+		C2C712E3279FD311008CF44A /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C712E1279FD2E5008CF44A /* Merge.swift */; };
+		C2C712E4279FD311008CF44A /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C712E0279FD2E5008CF44A /* Diff.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		C2C712D4279FD27F008CF44A /* ForceDirect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceDirect.swift; sourceTree = "<group>"; };
 		C2C712D5279FD280008CF44A /* CGGraphics+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGGraphics+Extension.swift"; sourceTree = "<group>"; };
 		C2C712D6279FD280008CF44A /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		C2C712DE279FD2E5008CF44A /* DiffPlayground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffPlayground.swift; sourceTree = "<group>"; };
+		C2C712E0279FD2E5008CF44A /* Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diff.swift; sourceTree = "<group>"; };
+		C2C712E1279FD2E5008CF44A /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		C2C712C0279FD217008CF44A /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				C2C712DD279FD2DA008CF44A /* Diff */,
 				C2C712D0279FD261008CF44A /* Force Directed Graph */,
 				C2C712CF279FD25A008CF44A /* Playground.entitlements */,
 				C2C712C1279FD217008CF44A /* PlaygroundApp.swift */,
@@ -93,6 +100,24 @@
 				C2C712D1279FD27F008CF44A /* Node.swift */,
 			);
 			path = "Force Directed Graph";
+			sourceTree = "<group>";
+		};
+		C2C712DD279FD2DA008CF44A /* Diff */ = {
+			isa = PBXGroup;
+			children = (
+				C2C712DF279FD2E5008CF44A /* Core */,
+				C2C712DE279FD2E5008CF44A /* DiffPlayground.swift */,
+			);
+			path = Diff;
+			sourceTree = "<group>";
+		};
+		C2C712DF279FD2E5008CF44A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C2C712E0279FD2E5008CF44A /* Diff.swift */,
+				C2C712E1279FD2E5008CF44A /* Merge.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C712E3279FD311008CF44A /* Merge.swift in Sources */,
 				C2C712D7279FD280008CF44A /* Node.swift in Sources */,
 				C2C712C4279FD217008CF44A /* ContentView.swift in Sources */,
+				C2C712E4279FD311008CF44A /* Diff.swift in Sources */,
+				C2C712E2279FD30E008CF44A /* DiffPlayground.swift in Sources */,
 				C2C712C2279FD217008CF44A /* PlaygroundApp.swift in Sources */,
 				C2C712DB279FD280008CF44A /* CGGraphics+Extension.swift in Sources */,
 				C2C712D8279FD280008CF44A /* Function.swift in Sources */,
