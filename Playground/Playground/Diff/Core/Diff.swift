@@ -49,30 +49,30 @@ public struct Myers<E: Equatable> {
         var (x, y) = (a.count, b.count)
         var path: [Diff<E>] = []
         for (d, vertices) in trace.enumerated().reversed() {
-            let k = x - y
+            let k = x &- y
             let prevK: Int
             if k == -d || (k != d && vertices[k &- 1] < vertices[k &+ 1]) {
-                prevK = k + 1
+                prevK = k &+ 1
             } else {
-                prevK = k - 1
+                prevK = k &- 1
             }
             let prevX = vertices[prevK]
-            let prevY = prevX - prevK
+            let prevY = prevX &- prevK
             while x > prevX, y > prevY {
                 path.append(.init(type: .same(old: x, new: y),
-                                  value: a[x - 1]))
-                x -= 1
-                y -= 1
+                                  value: a[x &- 1]))
+                x &-= 1
+                y &-= 1
             }
             if x == 0, y == 0 {
                 return path.reversed()
             }
             if x == prevX {
                 path.append(.init(type: .insert(at: y),
-                                  value: b[y - 1]))
+                                  value: b[y &- 1]))
             } else {
                 path.append(.init(type: .delete(at: x),
-                                  value: a[x - 1]))
+                                  value: a[x &- 1]))
             }
             (x, y) = (prevX, prevY)
         }
@@ -82,7 +82,7 @@ public struct Myers<E: Equatable> {
     private func shortestEdit() -> [_V] {
         let maxX = a.count
         let maxY = b.count
-        let max = maxX + maxY
+        let max = maxX &+ maxY
         var vertices: _V = .init(maxIndex: 1)
         var trace = [_V]()
         var x = 0
@@ -95,7 +95,7 @@ public struct Myers<E: Equatable> {
                 if k == -d || (k != d && preV[k &- 1] < preV[k &+ 1]) {
                     x = preV[k &+ 1]
                 } else {
-                    x = preV[k &- 1] + 1
+                    x = preV[k &- 1] &+ 1
                 }
                 y = x &- k
                 while x < maxX, y < maxY, a[x] == b[y] {
